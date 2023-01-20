@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Swal from "sweetalert2";
 
-// import Add from "./Add";
-import AddReducer from "../Ajaira/AddReducer";
+import Add from "./Add";
 import Edit from "./Edit";
 import List from "./List";
 import Header from "./Header";
@@ -71,7 +70,7 @@ function Dashboard() {
         //   setEmployees={setEmployees}
         //   setIsAdding={setIsAdding}
         // />
-        <AddReducer
+        <Add
           employees={employees}
           setEmployees={setEmployees}
           setIsAdding={setIsAdding}
